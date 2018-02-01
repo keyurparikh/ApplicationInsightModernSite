@@ -22,5 +22,9 @@ This package produces the following:
 gulp clean
 gulp test
 gulp serve
-gulp bundle
-gulp package-solution
+gulp bundle --ship
+gulp package-solution --ship
+
+#### PowerShell
+Add-PnPCustomAction -ClientSideComponentId "df26cdf9-bffd-494f-92df-d9b1cc700d9d" -Name "AzureAnalytics" -Title "AzureAnalytics" -Location ClientSideExtension.ApplicationCustomizer -ClientSideComponentProperties: '{"testMessage":"Azure Insight"}' -Scope Site
+
